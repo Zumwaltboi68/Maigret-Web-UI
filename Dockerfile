@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
-RUN printf "Flask==3.0.2\nmaigret==0.5.0\n" > requirements.txt \
+RUN printf "Flask==3.1.1\nmaigret==0.5.0\n" > requirements.txt \
  && pip install --upgrade pip \
  && pip install -r requirements.txt
 
